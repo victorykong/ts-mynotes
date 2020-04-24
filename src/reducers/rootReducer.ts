@@ -5,5 +5,8 @@
 import { combineReducers } from '@reduxjs/toolkit';
 
 // 子 reducer
+import { likeReducer } from './subReducers';
 
-export default combineReducers({});
+export default combineReducers({
+  like: likeReducer,
+});
